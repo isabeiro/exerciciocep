@@ -5,8 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        #formulario {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #formulario div {
+            padding: 5px;
+        }
+
+        #formulario div .input {
+            
+            border-radius: 5px;
+        }
+    </style>
+
 </head>
 <body>
     
+    <h1>Informe o CEP</h1>
+    <p>Digite o CEP e, ao sair do campo o endereço será completado. Pode utilizar a tecla TAB após digitar o CEP.</p>
+
+    <form id="formulario" action="">
+        <div>
+            <label>Cep:</label> <input class="input" name="inputCep" type="number">
+        </div>
+        <div>
+            <label>Rua:</label> <input class="input" name="inputRua" type="text">
+        </div>
+        <div>
+            <label>Bairro:</label> <input class="input" name="inputBairro" type="text">
+        </div>
+        <div>
+            <label>Cidade:</label> <input class="input" name="inputCidade" type="text">
+        </div>
+        <div>
+            <label>Estado:</label> <input class="input" name="inputEstado" type="text">
+        </div>
+        <div>
+            <label>IBGE:</label> <input class="input" name="inputIbge" type="number">
+        </div>
+    </form>
+
 </body>
 </html>
