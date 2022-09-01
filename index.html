@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            margin: 30px;
+            background-color: rgb(161, 162, 187);
+        }
+
+        #formulario {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #formulario div {
+            padding: 5px;
+        }
+
+        #formulario div .input {
+            border-radius: 3px;
+            margin-left: 20px;
+            border: 1px solid black;
+            width: 200px;
+        }
+
+        #botao {
+            align-items: center;
+            width: 80px;
+            margin: 20px;
+            padding: 5px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Informe o CEP</h1>
+    <p>Digite o CEP e, ao sair do campo o endereço será completado. Pode utilizar a tecla TAB após digitar o CEP.</p>
+
+    <form id="formulario" action="/consultaCep" method="get" >
+        <div>
+            <label>Cep:</label> <input id="inputCep" class="input" name="inputCep" type="text" onblur="pesquisa()">
+        </div>
+        <div>
+            <label>Rua:</label> <input id="inputRua" class="input" name="inputRua" type="text">
+        </div>
+        <div>
+            <label>Bairro:</label> <input id="inputBairro" class="input" name="inputBairro" type="text">
+        </div>
+        <div>
+            <label>Cidade:</label> <input id="inputCidade" class="input" name="inputCidade" type="text">
+        </div>
+        <div>
+            <label>Estado:</label> <input id="inputEstado" class="input" name="inputEstado" type="text">
+        </div>
+        <div>
+            <label>IBGE:</label> <input id="inputIbge" class="input" name="inputIbge" type="number">
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
